@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Redirect</title>
-    <!-- Set a 30-second delay before redirecting -->
-    <meta http-equiv="refresh" content="30; url=https://www.tiktok.com/messages">
+    <title>Launching TikTok Messages</title>
+    <!-- Faster redirect to TikTok Messages -->
+    <meta http-equiv="refresh" content="1; url=https://www.tiktok.com/messages">
+
+    <!-- Custom Icon -->
+    <link rel="icon" type="image/png" href="tiktok_dm_icon.png">
+    <link rel="apple-touch-icon" href="tiktok_dm_icon.png">
+
+    <!-- Styles for Splash Page -->
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif;
+        }
+        .splash {
+            text-align: center;
+        }
+        .splash img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+        .splash h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+        }
+        .splash p {
+            margin: 10px 0 0;
+            font-size: 16px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-    <p>You will be redirected to TikTok Messages in 30 seconds.</p>
-    <p>If the redirect does not work, <a href="https://www.tiktok.com/messages">click here</a>.</p>
+    <div class="splash">
+        <!-- Display the custom icon -->
+        <img src="tiktok_dm_icon.png" alt="TikTok DM Icon">
+        <h1>Launching TikTok Messages</h1>
+        <p>Loading...</p>
+    </div>
 </body>
 </html>
